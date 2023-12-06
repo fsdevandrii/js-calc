@@ -65,7 +65,7 @@ class Calc {
 
   static #load = () => {
     this.#value =
-      window.localStorage.setItem(this.#NAME) || ''
+      window.localStorage.getItem(this.#NAME) || ''
   }
 
   static init = () => {
